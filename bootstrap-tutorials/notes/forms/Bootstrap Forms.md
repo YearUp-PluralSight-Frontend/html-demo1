@@ -341,6 +341,8 @@ Bootstrap forms offer a comprehensive solution for creating user-friendly and re
 ```
 
 ### with validation
+
+#### code
 ```html
 <!doctype html>
 
@@ -508,3 +510,63 @@ crossorigin="anonymous"
 </html>
 
 ```
+---
+
+### **Overview**
+This script is designed to implement custom validation styles for Bootstrap forms. It uses a self-executing function to encapsulate the code and ensure that it runs immediately after the page loads. Here's how it works:
+
+#### **1. Self-Executing Function**
+```javascript
+(function() {
+    // code here
+})();
+```
+- **What It Does**: This is an **Immediately Invoked Function Expression (IIFE)**. It runs the function as soon as it is defined. The primary purpose of using an IIFE is to create a private scope, preventing variables from polluting the global scope.
+
+#### **2. Use Strict**
+```javascript
+'use strict';
+```
+- **What It Does**: Enabling strict mode in JavaScript helps catch common coding errors and prevents the use of some potentially problematic features. It makes it easier to write "secure" JavaScript by throwing errors for unsafe actions (like using undeclared variables).
+
+#### **3. Window Load Event**
+```javascript
+window.addEventListener('load', function() {
+    // code here
+}, false);
+```
+- **What It Does**: This code sets up an event listener that waits for the entire page (including all dependent resources like stylesheets and images) to finish loading. Once the page is fully loaded, the callback function executes. This ensures that all elements are available for manipulation.
+
+#### **4. Fetching Forms**
+```javascript
+var forms = document.getElementsByClassName('needs-validation');
+```
+- **What It Does**: This line selects all elements in the document with the class name `needs-validation`. This class is typically applied to forms that require custom validation styles. The result is an HTMLCollection of elements.
+
+#### **5. Looping Over Forms**
+```javascript
+var validation = Array.prototype.filter.call(forms, function(form) {
+    // code here
+});
+```
+- **What It Does**: This line uses `Array.prototype.filter.call` to convert the `forms` HTMLCollection into an array and iterate over each form. The `filter` method is used here not for filtering but just to execute the provided function on each form. 
+
+#### **6. Adding Event Listener for Form Submission**
+```javascript
+form.addEventListener('submit', function(event) {
+    if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+    }
+    form.classList.add('was-validated');
+}, false);
+```
+- **What It Does**:
+  - **Event Listener**: For each form, an event listener is added that listens for the `submit` event.
+  - **Check Validity**: When the form is submitted, it checks if the form is valid using `form.checkValidity()`. This method returns `true` if the form is valid and `false` otherwise.
+  - **Prevent Submission**: If the form is invalid (`checkValidity() === false`), it calls `event.preventDefault()` to stop the form from being submitted and `event.stopPropagation()` to stop the event from bubbling up the DOM.
+  - **Apply Validation Styles**: Regardless of validity, it adds the class `was-validated` to the form. This class triggers Bootstrap’s validation styles, visually indicating which fields are valid or invalid.
+
+#### **7. Final Notes**
+- **`false` Parameter**: The third parameter of `addEventListener` is `false`, indicating that the event should not be captured during the capturing phase, which is the standard behavior.
+- **Encapsulation**: The use of an IIFE keeps this code self-contained, minimizing potential conflicts with other scripts.
