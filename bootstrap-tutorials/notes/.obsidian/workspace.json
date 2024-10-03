@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "table/Bootstrap Table.md",
+                "file": "lists/Bootstrap Lists.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "table/Bootstrap Table.md",
+                "file": "lists/Bootstrap Lists.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "table/Bootstrap Table.md",
+                "file": "lists/Bootstrap Lists.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "table/Bootstrap Table.md"
+                "file": "lists/Bootstrap Lists.md"
               }
             }
           }
@@ -173,8 +173,10 @@
   },
   "active": "b401b435d0053d71",
   "lastOpenFiles": [
-    "typography/Bootstrap Typography.md",
     "table/Bootstrap Table.md",
+    "lists/Bootstrap Lists.md",
+    "lists",
+    "typography/Bootstrap Typography.md",
     "table",
     "grid-system/Bootstrap Grid-System.md",
     "fluid-layout/Bootstrap Fluid Layout.md",
