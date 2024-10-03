@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "container/Bootstrap Container.md",
+                "file": "grid-system/Bootstrap Grid-System.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "57616f8bb0a32c0e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fixed-layout/Bootstrap Fixed Layout.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "container/Bootstrap Container.md",
+                "file": "fixed-layout/Bootstrap Fixed Layout.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "container/Bootstrap Container.md",
+                "file": "fixed-layout/Bootstrap Fixed Layout.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "container/Bootstrap Container.md"
+                "file": "fixed-layout/Bootstrap Fixed Layout.md"
               }
             }
           }
@@ -146,11 +159,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b6cda43c0954dd57",
+  "active": "57616f8bb0a32c0e",
   "lastOpenFiles": [
+    "grid-system/Bootstrap Grid-System.md",
+    "fixed-layout/Bootstrap Fixed Layout.md",
+    "fixed-layout",
+    "grid-system/Screenshot 2024-10-03 at 03.33.44.png",
+    "grid-system/Screenshot 2024-10-03 at 03.18.51.png",
+    "container/Bootstrap Container.md",
     "grid-system",
     "container/Screenshot 2024-10-03 at 02.43.41.png",
-    "container/Bootstrap Container.md",
     "container"
   ]
 }

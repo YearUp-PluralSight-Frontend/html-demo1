@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Grid-System</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!-- place navbar here -->
+    </header>
+    <main>
+      <div class="container-lg">
+
+        <!-- Grid Columns with Equal Width -->
+        <hr/>
+        <div
+            class="row justify-content-center align-items-center g-2 py-2 my-2"
+        >
+            <div class="col-12 col-md-12 col-lg-4 col-xl-4 ">Column</div>
+            <div class="col-12 col-md-12 col-lg-4 col-xl-4">Column</div>
+            <div class="col-12 col-md-12 col-lg-4 col-xl-4">Column</div>
+        </div>
+
+
+        <!-- Grid Columns with Different Sizes -->
+        <hr/>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-3">Column one</div>
+                <div class="col-md-8 col-lg-6">Column two</div>
+                <div class="col-md-12 col-lg-3">Column three</div>
+            </div>
+        </div>
+
+        <!-- Grid Columns with Equal Width -->
+        <hr/>
+        <div class="container">
+            <!--Row with two equal columns-->
+            <div class="row">
+                <div class="col">Column one</div>
+                <div class="col">Column two</div>
+            </div>
+            
+            <!--Row with three columns divided in 1:2:1 ratio-->
+            <div class="row">
+                <div class="col">Column one</div>
+                <div class="col-sm-6">Column two</div>
+                <div class="col">Column three</div>
+            </div>
+        </div>
+
+
+        <!-- Grid Columns with Different Sizes -->
+        <hr/>
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-xl-4"><p>Box 1</p></div>
+                <div class="col-xl-4"><p>Box 2</p></div>
+                <div class="col-xl-4"><p>Box 3</p></div>
+                <div class="col-xl-4"><p>Box 4</p></div>
+                <div class="col-xl-4"><p>Box 5</p></div>
+                <div class="col-xl-4"><p>Box 6</p></div>
+                <div class="col-xl-4"><p>Box 7</p></div>
+                <div class="col-xl-4"><p>Box 8</p></div>
+                <div class="col-xl-4"><p>Box 9</p></div>
+                <div class="col-xl-4"><p>Box 10</p></div>
+                <div class="col-xl-4"><p>Box 11</p></div>
+                <div class="col-xl-4"><p>Box 12</p></div>
+            </div>
+        </div>
+        
+        
+        <!-- Grid Columns with Different Sizes -->
+        <hr/>
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-xl-4 col-md-6"><p>Box 1</p></div>
+                <div class="col-xl-4 col-md-6"><p>Box 2</p></div>
+                <div class="col-xl-4 col-md-6"><p>Box 3</p></div>
+                <div class="col-xl-4 col-md-6"><p>Box 4</p></div>
+                <div class="col-xl-4 col-md-6"><p>Box 5</p></div>
+                <div class="col-xl-4 col-md-6"><p>Box 6</p></div>
+                <div class="col-xl-4 col-md-6"><p>Box 7</p></div>
+                <div class="col-xl-4 col-md-6"><p>Box 8</p></div>
+                <div class="col-xl-4 col-md-6"><p>Box 9</p></div>
+                <div class="col-xl-4 col-md-6"><p>Box 10</p></div>
+                <div class="col-xl-4 col-md-6"><p>Box 11</p></div>
+                <div class="col-xl-4 col-md-6"><p>Box 12</p></div>
+            </div>
+        </div>
+
+        <!-- Nesting of Grid Columns -->
+        <hr/>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">Column left</div>
+                <div class="col-sm-4">
+                    <!--Column right with nested rows and columns-->
+                    <div class="row">
+                        <div class="col-12"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6"></div>
+                        <div class="col-6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Creating Variable Width Columns -->
+        <hr/>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-3">Column left</div>
+                <div class="col-md-auto">Variable width column</div>
+                <div class="col-md-3">Column right</div>
+            </div>
+            <div class="row">
+                <div class="col">Column left</div>
+                <div class="col-auto">Variable width column</div>
+                <div class="col">Column right</div>
+            </div>
+        </div>
+
+
+        <!-- Vertical Alignment of Grid Columns -->
+        <hr/>
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col">Column one</div>
+                <div class="col">Column two</div>
+                <div class="col">Column three</div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col">Column one</div>
+                <div class="col">Column two</div>
+                <div class="col">Column three</div>
+            </div>
+            <div class="row align-items-end">
+                <div class="col">Column one</div>
+                <div class="col">Column two</div>
+                <div class="col">Column three</div>
+            </div>
+        </div>
+
+
+        <!-- Horizontal Alignment of Grid Columns -->
+        <hr/>
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-4">Column one</div>
+                <div class="col-4">Column two</div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-4">Column one</div>
+                <div class="col-4">Column two</div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-4">Column one</div>
+                <div class="col-4">Column two</div>
+            </div>
+        </div>
+        
+      </div>
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
