@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b401b435d0053d71",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "typography/Bootstrap Typography.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fixed-layout/Bootstrap Fixed Layout.md",
+                "file": "typography/Bootstrap Typography.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fixed-layout/Bootstrap Fixed Layout.md",
+                "file": "typography/Bootstrap Typography.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fixed-layout/Bootstrap Fixed Layout.md"
+                "file": "typography/Bootstrap Typography.md"
               }
             }
           }
@@ -159,10 +171,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57616f8bb0a32c0e",
+  "active": "b401b435d0053d71",
   "lastOpenFiles": [
     "grid-system/Bootstrap Grid-System.md",
+    "typography/Bootstrap Typography.md",
+    "fluid-layout/Bootstrap Fluid Layout.md",
+    "typography",
     "fixed-layout/Bootstrap Fixed Layout.md",
+    "fluid-layout",
     "fixed-layout",
     "grid-system/Screenshot 2024-10-03 at 03.33.44.png",
     "grid-system/Screenshot 2024-10-03 at 03.18.51.png",
